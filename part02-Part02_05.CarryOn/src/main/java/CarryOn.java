@@ -5,6 +5,13 @@ public class CarryOn {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        String termination = "no";
+        while (true){
+            System.out.println("Shall we carry on?");
+            String response = scanner.nextLine();
+            if (response.equals(termination)){
+                break;
+            }
+        }
     }
 }
